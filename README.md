@@ -1,72 +1,84 @@
-# Nvidia Rebirth: Clean, Optimized Nvidia Graphics Driver for Gaming
+# Nvidia Rebirth: Minimal Nvidia Driver for Low Latency Gaming!
 
 ![Cover](https://raw.githubusercontent.com/rakhalfps/Nvidia-Rebirth/124142ccbc11b8949b91383703d8b243ea138518/Media/Cover.png)
 
-[![Downloads](https://img.shields.io/github/downloads/rakhalfps/Nvidia-Rebirth/total?color=blue)]()&nbsp;&nbsp;&nbsp;[![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/rakhalfps/Nvidia-Rebirth/total?color=blue)]()
 
 ---
 
-Nvidia Rebirth is a lightweight, optimized Nvidia driver that removes telemetry and background services to reduce input lag and improve frame stability. Designed for competitive gaming and creators. Tested on RTX 4060 and Ryzen 7 5700X3D. Supports GTX 10 through RTX 40 series GPUs.
+**Nvidia Rebirth** is a minimal, performance-focused Nvidia graphics driver designed to reduce latency and improve frame stability by removing telemetry, GeForce Experience, and unnecessary background services. Ideal for competitive gamers and creators who demand responsive and smooth GPU performance.
 
-> **Note:** This driver does *not* support or provide benefits for RTX 50-series GPUs. Use official drivers for those.
-
----
-
-### System Specs & Performance
-
-| Component      | Specification           |        | Game          | Avg FPS | Input Lag Reduction |
-|----------------|-------------------------|--------|---------------|---------|---------------------|
-| GPU            | RTX 4060 8GB            |        | Valorant      | 450     | ~5ms lower          |
-| CPU            | Ryzen 7 5700X3D         |        | CS2           | 395     | ~4ms lower          |
-| RAM            | 32GB DDR4 3600 CL16     |        | Apex Legends  | 248     | ~6ms lower          |
-| OS             | Windows 10 Pro 24H2     |        | Fortnite      | 315     | ~5ms lower          |
+- Supports GTX 10 to RTX 50 series GPUs (desktop and laptop)  
+- Optimized for high refresh rate gaming (144Hz and above)  
+- Reduces input lag and improves frame pacing  
+- Removes telemetry and background processes for a lightweight footprint  
+- Maintains full compatibility with CUDA, DirectX, OpenGL, and Vulkan  
+- Compatible with hybrid GPU (Optimus) laptop setups  
 
 ---
 
-### Key Features
+### Installation Guide
 
-- Removed telemetry and unnecessary background services  
-- Improved CPU-GPU scheduling for smoother frame times  
-- Reduced system latency and input delay  
-- Optimized for high refresh rates (144–360Hz)  
-- Stable frame pacing under CPU load  
+1. **Download**  
+   Download the latest release from the [Releases page](https://github.com/rakhalfps/Nvidia-Rebirth/releases).
 
----
+2. **Uninstall Existing Drivers**  
+   Use [Display Driver Uninstaller (DDU)](https://www.wagnardsoft.com/) in Safe Mode to fully remove all existing Nvidia drivers.
 
-### How to Install
+3. **Restart**  
+   Reboot your system normally.
 
-1. Download the latest release from [here](https://github.com/rakhalfps/Nvidia-Rebirth/releases).  
-2. Use [DDU](https://www.wagnardsoft.com/) to fully uninstall existing Nvidia drivers.  
-3. Restart your PC.  
-4. Run the Rebirth installer and follow the instructions.  
-5. (Optional) Select “Clean Install” during setup to reset Nvidia settings.
+4. **Install Nvidia Rebirth**  
+   Run the installer and follow the on-screen instructions. This installs the optimized driver with no telemetry or extra bloat.
 
----
-
-### FAQ
-
-- **Will this increase FPS?**  
-  Mainly improves frame stability and reduces input lag; FPS gains vary by system and game.
-
-- **Is it compatible with laptops?**  
-  Yes, but hybrid GPU (Optimus) setups may behave differently.
-
-- **How does it differ from official drivers?**  
-  Removes telemetry, GeForce Experience, and unused services to reduce bloat and improve responsiveness.
+5. **(Optional) Configure Settings**  
+   Open Nvidia Control Panel to adjust power management, V-Sync, or other preferences to your liking.
 
 ---
 
-### Roadmap & Support
+### Features
 
-- Install profiles for Gaming and Studio modes  
-- Support for RTX 4090 and newer GPUs (except 50-series)  
-- Built-in latency monitoring tools (planned)  
-- Multi-language and multi-OS support coming  
-
-Report issues or request features on [GitHub Issues](https://github.com/rakhalfps/Nvidia-Rebirth/issues).  
-Join the community on [Discord](https://discord.gg/krpUAHkf5m).  
-Contributions and pull requests welcome!
+- **Low Latency & Input Lag Reduction:** Streamlined processes reduce system overhead and improve input responsiveness.  
+- **Stable Frame Pacing:** Optimizations ensure smoother frame delivery under heavy CPU or GPU load.  
+- **No Telemetry & No Bloat:** All data collection, GeForce Experience, and unnecessary background services removed.  
+- **Broad GPU Support:** Covers a wide range of Nvidia GPUs, including the latest RTX 50 series.  
+- **Safe & Reliable:** Built on official Nvidia drivers without reverse engineering, maintaining stability and compatibility.  
+- **Easy Installation & Updates:** Clean installation process with manual update support.  
 
 ---
 
-© MIT License | Thank you for choosing **Nvidia Rebirth**
+### Frequently Asked Questions (FAQ)
+
+- **Will this increase my FPS?**  
+  Primarily focused on latency and frame stability; FPS improvements depend on your system and game.
+
+- **Is GeForce Experience included?**  
+  No, it’s intentionally removed to keep the driver lightweight.
+
+- **Does it support Nvidia ShadowPlay or Overlay?**  
+  No, those features require GeForce Experience.
+
+- **Is this safe for my hardware?**  
+  Absolutely. The core driver remains official Nvidia code with telemetry and extras removed.
+
+- **Will it work on laptops?**  
+  Yes, including systems with hybrid GPU (Optimus) configurations.
+
+- **Can I add GeForce Experience back?**  
+  While possible, it is discouraged as it may impact performance and stability.
+
+- **Is it legal?**  
+  Yes. Nvidia Rebirth repackages official Nvidia drivers with optional components removed.
+
+- **How do I update?**  
+  Download and install new releases manually from this repository.
+
+- **Is it suitable for creative workflows?**  
+  Yes. Full support for CUDA, DirectX, OpenGL, and Vulkan is retained.
+
+- **Is the source code available?**  
+  Yes. Everything is open source and available on GitHub for review and contributions.
+
+---
+
+For support, bug reports, or feature requests, please open an issue on [GitHub Issues](https://github.com/rakhalfps/Nvidia-Rebirth/issues) or join our [Discord community](https://discord.gg/krpUAHkf5m).
